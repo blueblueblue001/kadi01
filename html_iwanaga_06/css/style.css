@@ -1,0 +1,587 @@
+/* ここから下に記載していく */
+@charset "utf-8";
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #333333;
+    font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5em;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.site-title{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+/* --------------------
+    header
+*---------------------*/
+.header{
+    padding: 50px 0 0px;
+}
+.header-wrapper{
+    display: flex;
+}
+
+.logo{
+    padding: 0 10px;
+}
+.btn-trigger{
+    display: none;
+}
+
+.nav-list{
+    padding: 25px 0px;
+    display: flex;
+    vertical-align:bottom;    
+}
+
+.nav-item{
+    margin: 0 0 0 120px;
+    font-size: 21px;
+}
+.a{
+    color:#000;
+    text-decoration: none;
+}
+.title{
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+/* --------------------
+    main-image
+*---------------------*/
+.main-image{
+    position: relative;
+}
+.main-image__text1{
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    font-size: 3rem;
+    font-weight:bold;
+    color: #fff;
+}
+.main-image__text2{
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    font-size: 2rem;
+    font-weight:bold;
+    color: #fff;
+    margin: 30px;
+}
+
+
+/* --------------------
+    about 
+*---------------------*/
+
+.profile{
+    padding: 60px 0;
+}
+.profile-wrapper{
+    width: 560px;
+    margin: auto;
+}
+
+.profile__title{
+    margin: 0 0 30px;
+    font-size:2.4rem;
+    font-weight: bold;
+    color: #ffd61a;
+}
+
+.profile__name{
+    margin: 0 0 60px;
+}
+.profile__text{
+    margin: 0 0 40px;
+    line-height: 2;
+}
+ 
+.profile__list{
+    display: flex;
+    margin: auto;
+}
+
+/* --------------------
+    course
+*---------------------*/
+
+.course-wrapper{
+    padding: 60px 0;
+}
+
+.box_image {
+    display: block;
+    max-width: 100%;
+}
+
+.box_text {
+    box-sizing: border-box;
+}
+
+.box_subtitle{
+    text-align: center;
+    font-weight: bold;
+    margin: 40px;
+}
+
+.box_details{
+    text-align: center;
+    margin: 40px; 
+}
+
+@media screen and (max-width: 767.98px) {
+    .box_text {
+        padding: 60px 20px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .box {
+        position: relative;
+        background-color: #fafafa;
+    }
+    .box_text {
+        padding: 60px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .box_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+@media screen and (min-width: 1100px) {
+    .box_text {
+        border: 1px solid #000;
+        background-color: #fff;
+    }
+    .box_image {
+        position: relative;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-100%);
+        width: 50%;
+        max-width: 700px;
+    }
+    .box_text {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translateY(-50%);
+        width: 50%;
+        max-width: 700px;
+    }
+    .box:nth-of-type(even) .box_image {
+        transform: translateX(0%);
+    }
+    .box:nth-of-type(even) .box_text {
+        left: 55%;
+        transform: translateX(-100%) translateY(-50%);
+    }
+}
+
+/* --------------------
+    news
+*---------------------*/
+
+.wapper{
+    max-width: 1140px;
+    margin: auto;
+}
+    
+.news{
+    padding: 60px 0;
+}
+
+.news__list{
+    display:flex;
+    margin: 0 0 60px;
+}
+
+.news__item{
+    width: 33.333%;
+}
+.news__title{
+    margin: 0 0 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.news__eyecatch{
+    margin: 0 0 30px;
+}
+    
+.news__heading{
+    margin: 0 0 24px;
+}
+
+.news__contents{
+    padding: 0 16px;
+}
+
+.news__date{
+    margin: 0 0 24px;
+}
+
+.btn{
+    display: block;
+    border:none;
+    width: 300px;
+    margin:auto;
+    padding:30px 0;
+    background-color: #ffd61a;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;  
+    text-decoration: none; 
+}
+
+/* --------------------
+    access
+*---------------------*/
+.access{
+    padding:30px 0;
+    background-color:#fafafa;
+}
+
+.access-wrapper{
+    width:560;
+    margin:auto; 
+}
+
+.map{
+    margin:auto;
+    padding:30px;
+}
+.access__title{
+    margin: 0 0 60px;
+}
+
+.access__table{
+    margin: auto;
+    padding: 30px ;
+}
+
+.access__th{
+    height: 50px;
+    padding: 10px;
+    text-align: left;
+}
+
+.access__td{
+    text-align: left;
+}
+
+/* --------------------
+    contact
+*---------------------*/
+
+.form-wrapper{
+    width:640px ;
+    margin: auto;
+    padding: 60px;
+}
+
+.form-inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__text1{
+    margin: 60px;
+}
+
+.form__text2{
+    margin: 30px;
+}
+
+.form__text3{
+    margin: 75px;
+}
+
+.form-title{
+    width: 240px;
+    border: solid 2px;  /* 枠線指定 */
+    border-color: #bfbfbf;;
+    border-left-color:none ;
+    margin-left: 16px;
+    padding: 8px; 
+    text-align: left;     /* 余白指定 */
+    vertical-align:text-top
+
+}
+
+.form-item{
+    width: 400px;
+    border: solid 2px;  /* 枠線指定 */
+    border-color:#bfbfbf;
+    border-right-color: none;
+    padding: 8px;  
+    text-align: left;    /* 余白指定 */
+
+}
+
+.form__column{
+    width: 95%;
+    border: solid 1px; 
+    border-color: #bfbfbf;
+}
+
+.selectbox-003{
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+    }
+
+.submit-wrapper{
+    padding: 30px 0 140px;
+}
+
+.form__label{
+    padding: 8px;
+}
+
+.input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+/* チェックボックスデザイン */
+.input[type="checkbox"] {
+    cursor: pointer;
+    padding-left: 80px;/*label手前にチェックボックス用の余白を開ける*/
+    vertical-align: middle;
+    position: relative;
+  }
+ 
+.input[type="checkbox"]::before,
+  input[type="checkbox"]::after {
+    content: "";
+    display: block; 
+    position: absolute;
+  }
+ 
+.input[type="checkbox"]::before {
+    background-color: #fff;
+    border-radius: 0%;
+    border: 1px solid #666464;
+    width: 20px;/*チェックボックスの横幅*/
+    height: 20px;/*チェックボックスの縦幅*/
+    transform: translateY(-50%);
+
+  }
+ 
+.input[type="checkbox"]::after {
+    border-bottom: 3px solid #666464;/*チェックの太さ*/
+    border-left: 3px solid #666464;/*チェックの太さ*/
+    opacity: 0;/*チェック前は非表示*/
+    height: 6px;/*チェックの高さ*/
+    width: 11px;/*チェックの横幅*/
+    transform: rotate(-45deg);
+  }
+ 
+.input[type="checkbox"]:checked::after {
+    opacity: 1;/*チェック後表示*/
+  }
+/* --------------------
+   footer
+*---------------------*/
+
+.footter{
+    background-color: #707070; 
+    width: auto; 
+    padding:24px 0;
+}
+.copyrights{
+    color: #fff;
+}
+
+@media only screen and (max-width: 750px) {
+    img { max-width: 100%; }
+}
+
+@media only screen and (max-width: 640px) {
+
+    /* ---------------------------
+           header
+     *---------------------------*/
+     .header{
+        padding: 10Px;
+    }
+    .header-wrapper{
+        display: block;
+        height: 64px;
+    }
+
+    .logo{
+        padding: 10px;
+    }
+
+    .logo-image{
+        width: 40%;
+    }
+
+    .btn-trigger{
+        appearance: none;
+        -webkit-appearance: none;
+        display: block;
+        position: fixed;
+        z-index: 100;
+        top: 16px;
+        right: 40px;
+        width: 30px;
+        padding: 0px;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        outline: none;
+        -webkit-tap-highlight-color:rgba(243, 163, 14, 1)
+    }
+
+    .btn-trigger.active use:nth-of-type(1){
+        transform: translateY(30px) rotate(-45deg);
+    }
+    .btn-trigger.active use:nth-of-type(2){
+        opacity: 0;
+    }
+    .btn-trigger.active use:nth-of-type(3){
+        transform: translateY(30px) rotate(-45deg);
+    }
+    .navigation{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(240, 228, 171, 0.8);
+    }
+
+    .nav-list{
+        display: block;
+        padding: 84px 0 0;
+    }
+    .nav-item{
+        margin: 0 0 60px;
+        text-align: center;
+    }
+    .nav-item>a{
+        display: block;
+        font-size: 2.1rem;
+    }
+    /* ---------------------------
+           main-image
+     *---------------------------*/
+    .main-image{
+        margin: 64px 0 0;
+    }
+
+    .main-image__text1{
+        font-size: 2.4rem;
+        white-space: nowrap;
+    }
+
+    .main-image__text2{
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+    /* ---------------------------
+           about
+     *---------------------------*/
+    .profile-wrapper{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 10px;
+    }
+     .profile{
+        padding: 40px 0 40px;
+     }
+
+     .nav-list{
+        display: none;
+     }
+
+     .profile__title{
+        margin: 0 0 24px;
+     }
+
+     .profile__text{
+        width: 100%;
+        padding: 0 10px;
+
+     }
+
+     .profile__name{
+        margin: 0 0 20px;
+     }
+
+     .profile__list{
+        display: block;
+        width: 100%;
+        padding: 0 10px;
+     }
+
+    /* ---------------------------
+           contact
+     *---------------------------*/
+    .form-wrapper{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .form-inner{
+        display: block;
+        width: 100%;
+     }
+
+     .form-title{
+        width: 30%;
+     }
+
+     .form-item{
+        box-sizing: border-box;
+        width: 70%;
+     }
+
+     .map{
+        width:95%;
+    }
+    /* --------------------
+        footer
+    *---------------------*/
+
+    .copyrights{
+        font-size: 1.2rem;
+
+    }
